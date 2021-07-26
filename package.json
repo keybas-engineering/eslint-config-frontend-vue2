@@ -1,9 +1,11 @@
 {
-  "name": "eslint-backend",
+  "name": "@france-atelier/eslint-backend",
   "version": "1.0.0",
   "description": "A simple ESLint configuration for Keybas projects (backend)",
   "main": "index.js",
-  "scripts": {},
+  "files": [
+    "index.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git+ssh://git@gitlab.com/france-atelier/eslint-backend.git"
