@@ -1,5 +1,5 @@
 {
-  "name": "@france-atelier/eslint-backend",
+  "name": "@france-atelier/eslint-config-backend",
   "version": "1.0.0",
   "description": "A simple ESLint configuration for Keybas projects (backend)",
   "main": "index.js",
@@ -8,22 +8,21 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/france-atelier/eslint-backend.git"
+    "url": "git+ssh://git@gitlab.com/france-atelier/eslint-config-backend.git"
   },
   "engines": {
     "node": ">=12"
   },
   "keywords": [
     "eslint",
-    "company",
-    "config"
+    "eslintconfig"
   ],
   "author": "",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://gitlab.com/france-atelier/eslint-backend/issues"
+    "url": "https://gitlab.com/france-atelier/eslint-config-backend/issues"
   },
-  "homepage": "https://gitlab.com/france-atelier/eslint-backend#readme",
+  "homepage": "https://gitlab.com/france-atelier/eslint-config-backend#readme",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.28.4",
     "eslint-config-prettier": "^8.3.0",
