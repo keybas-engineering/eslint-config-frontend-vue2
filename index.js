@@ -5,7 +5,7 @@ module.exports = {
     "eslint:recommended",
     "plugin:jsonc/base",
     "plugin:jsonc/prettier",
-    "plugin:mocha/recommended",
+    "plugin:ava/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:security/recommended",
     "plugin:security-node/recommended",
@@ -17,7 +17,7 @@ module.exports = {
   plugins: [
     "@typescript-eslint",
     "jsonc",
-    "mocha",
+    "ava",
     "no-secrets",
     "security",
     "security-node",
@@ -83,12 +83,5 @@ module.exports = {
     // "@typescript-eslint/prefer-string-starts-ends-with": "error",
     // "@typescript-eslint/promise-function-async": "error",
     // "@typescript-eslint/require-array-sort-compare": "warn",
-
-    // Additional mocha warnings
-    "mocha/no-skipped-tests": process.env.CI ? "error" : "off",
-    "mocha/no-exclusive-tests": process.env.CI ? "error" : "off",
-    "mocha/no-mocha-arrows": "warn",
-    "mocha/no-setup-in-describe": "warn",
-    "mocha/max-top-level-suites": "warn",
   },
 };
