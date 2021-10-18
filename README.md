@@ -1,15 +1,12 @@
 # @france-atelier/eslint-config-backend
 
-Configuration ESLint pour les services backend de Keybas.
+Configuration ESLint pour les applications frontend Vue 2 de Keybas.
 
 Inclut les plugins suivants :
 
 - `@typescript-eslint/eslint-plugin` avec de nombreuses règles (les règles pouvant ralentir l'éditeur sont désactivées)
 - `jsonc` pour lire les fichiers JSON
-- `mocha` pour valider les tests Mocha
 - `no-secrets` pour valider qu'il n'y ait pas de secrets dans le code
-- `security` pour certaines règles de sécurité
-- `security-node` pour d'autres règles de sécurité
 - `sonarjs` pour la qualité de code
 - `unicorn` pour la qualité de code
 
@@ -20,7 +17,7 @@ Cette configuration ne définit ni parseur, ni formateur, qu'il faut installer s
 ### Installation
 
 ```sh
-npm i -D eslint typescript @france-atelier/eslint-config-backend @typescript-eslint/parser
+npm i -D eslint typescript @france-atelier/eslint-config-frontend-vue2
 ```
 
 ### Fichier `.eslintrc`
@@ -33,13 +30,8 @@ npm i -D eslint typescript @france-atelier/eslint-config-backend @typescript-esl
     "node": true,
     "es2021": true
   },
-  "extends": ["@france-atelier/eslint-config-backend"],
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "ecmaVersion": 2021,
-    "sourceType": "module",
-    "project": ["./tsconfig.json"]
-  }
+  "extends": ["@france-atelier/eslint-config-frontend-vue2"],
+  // vue parser, etc
 }
 ```
 
