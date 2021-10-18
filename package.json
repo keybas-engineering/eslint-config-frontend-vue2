@@ -1,14 +1,14 @@
 {
-  "name": "@france-atelier/eslint-config-backend",
-  "version": "1.2.0",
-  "description": "A simple ESLint configuration for Keybas projects (backend)",
+  "name": "@france-atelier/eslint-config-frontend-vue2",
+  "version": "1.0.0",
+  "description": "A simple ESLint configuration for Keybas projects (Vue 2 frontend)",
   "main": "index.js",
   "files": [
     "index.js"
   ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/france-atelier/eslint-config-backend.git"
+    "url": "git+ssh://git@gitlab.com/france-atelier/eslint-config-frontend-vue2.git"
   },
   "engines": {
     "node": ">=12"
@@ -20,22 +20,23 @@
   "author": "",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://gitlab.com/france-atelier/eslint-config-backend/issues"
+    "url": "https://gitlab.com/france-atelier/eslint-config-frontend-vue2/issues"
   },
-  "homepage": "https://gitlab.com/france-atelier/eslint-config-backend#readme",
+  "homepage": "https://gitlab.com/france-atelier/eslint-config-frontend-vue2#readme",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.29.2",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-jsonc": "^1.5.0",
-    "eslint-plugin-mocha": "^9.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-jsonc": "^1.7.0",
     "eslint-plugin-no-secrets": "^0.8.9",
-    "eslint-plugin-security": "^1.4.0",
-    "eslint-plugin-security-node": "^1.0.14",
+    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-sonarjs": "^0.10.0",
-    "eslint-plugin-unicorn": "^35.0.0"
+    "eslint-plugin-unicorn": "^35.0.0",
+    "eslint-plugin-vue": "^7.19.1",
+    "eslint-plugin-vuejs-accessibility": "^0.7.1"
   },
   "devDependencies": {
-    "prettier": "^2.3.2"
+    "prettier": "^2.4.1"
   },
   "peerDependencies": {
     "eslint": ">=7.0.0"

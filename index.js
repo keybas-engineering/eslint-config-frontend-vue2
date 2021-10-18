@@ -5,22 +5,26 @@ module.exports = {
     "eslint:recommended",
     "plugin:jsonc/base",
     "plugin:jsonc/prettier",
-    "plugin:mocha/recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:security/recommended",
-    "plugin:security-node/recommended",
+    "plugin:vue/recommended",
+    "plugin:vuejs-accessibility/recommended",
+    "plugin:import/recommended",
+    "plugin:import/typescript",
     "plugin:sonarjs/recommended",
     "plugin:unicorn/recommended",
     "prettier",
   ],
-  parser: "@typescript-eslint/parser",
+  parser: "vue-eslint-parser",
+  parserOptions: {
+    parser: "@typescript-eslint/parser",
+  },
   plugins: [
     "@typescript-eslint",
     "jsonc",
-    "mocha",
     "no-secrets",
-    "security",
-    "security-node",
+    "vue",
+    "vuejs-accessibility",
+    "import",
     "sonarjs",
     "unicorn",
   ],
@@ -28,6 +32,7 @@ module.exports = {
     // Code quality
     "unicorn/custom-error-definition": "error",
     "unicorn/import-style": "off",
+    "unicorn/filename-case": "off",
     "unicorn/prefer-module": "off",
     "unicorn/prefer-node-protocol": "off",
     "unicorn/prevent-abbreviations": "off",
@@ -40,7 +45,6 @@ module.exports = {
     "unicorn/no-array-push-push": "off",
 
     // Security
-    "security-node/detect-crlf": "off",
     "sonarjs/cognitive-complexity": ["warn", 8],
     "no-new-func": "error",
     "no-secrets/no-secrets": [
@@ -59,7 +63,7 @@ module.exports = {
     "@typescript-eslint/consistent-type-assertions": "warn",
     "@typescript-eslint/consistent-type-definitions": ["warn", "interface"],
     "@typescript-eslint/consistent-type-imports": "warn",
-    "@typescript-eslint/method-signature-style": "error",
+    "@typescript-eslint/method-signature-style": "off",
     "@typescript-eslint/no-confusing-non-null-assertion": "warn",
     "@typescript-eslint/no-extraneous-class": "warn",
     "@typescript-eslint/no-implicit-any-catch": "warn",
@@ -83,12 +87,5 @@ module.exports = {
     // "@typescript-eslint/prefer-string-starts-ends-with": "error",
     // "@typescript-eslint/promise-function-async": "error",
     // "@typescript-eslint/require-array-sort-compare": "warn",
-
-    // Additional mocha warnings
-    "mocha/no-skipped-tests": process.env.CI ? "error" : "off",
-    "mocha/no-exclusive-tests": process.env.CI ? "error" : "off",
-    "mocha/no-mocha-arrows": "warn",
-    "mocha/no-setup-in-describe": "warn",
-    "mocha/max-top-level-suites": "warn",
   },
 };
