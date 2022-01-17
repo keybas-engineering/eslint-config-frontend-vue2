@@ -1,6 +1,6 @@
 {
   "name": "@france-atelier/eslint-config-frontend-vue2",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A simple ESLint configuration for Keybas projects (Vue 2 frontend)",
   "main": "index.js",
   "files": [
@@ -24,19 +24,19 @@
   },
   "homepage": "https://gitlab.com/france-atelier/eslint-config-frontend-vue2#readme",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/eslint-plugin": "^5.9.1",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.25.2",
-    "eslint-plugin-jsonc": "^1.7.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsonc": "^2.0.0",
     "eslint-plugin-no-secrets": "^0.8.9",
     "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-sonarjs": "^0.10.0",
-    "eslint-plugin-unicorn": "^35.0.0",
-    "eslint-plugin-vue": "^7.19.1",
-    "eslint-plugin-vuejs-accessibility": "^0.7.1"
+    "eslint-plugin-sonarjs": "^0.11.0",
+    "eslint-plugin-unicorn": "^40.1.0",
+    "eslint-plugin-vue": "^8.3.0",
+    "eslint-plugin-vuejs-accessibility": "^1.1.1"
   },
   "devDependencies": {
-    "prettier": "^2.4.1"
+    "prettier": "^2.5.1"
   },
   "peerDependencies": {
     "eslint": ">=7.0.0"
